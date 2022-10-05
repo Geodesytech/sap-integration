@@ -1,0 +1,48 @@
+{
+  "theme": {
+    "name": "FoldableTheme"
+  },
+  "portalUrl": "http://www.arcgis.com",
+  "appId":"",
+  "title": "SAP Integration - Widget",
+  "subtitle": "Powered by LGEOM",
+  "geometryService": "http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer",
+  "links":[
+    {
+      "label": "Adani Group"
+    }
+  ],
+
+  "map": {
+    "3D": false,
+    "2D": true,
+
+    "itemId": "",
+
+    "position": {
+      "left": 0,
+      "top": 45,
+      "right": 0,
+      "bottom": 0
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/FoldableTheme/panels/FoldablePanel/Panel",
+      "positionRelativeTo": "map",
+      "position": {
+        "top": 1,
+        "right": 1,
+        "bottom": 1
+      }
+    },
+
+    "widgets": [{
+      "label": "SAP",
+      "uri": "widgets/SAPIntegration/Widget"
+    }, {
+      "label": "SAPIntegration",
+      "uri": "widgets/SAPIntegration/Widget"
+    }]
+  }
+}

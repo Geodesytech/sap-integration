@@ -1,0 +1,392 @@
+<div>
+	<div id="init-pay-container" class="init-container-main pay-label">
+		Please select the parcel by clicking on MAP..!
+	</div>
+
+	<div id="pay-container" class="container-main">
+		<div class="jimu-widget-sap panel-container">
+			<span class="jimu-widget-sap panel-title">CBA ACT</span>
+		</div>
+	<div id="master-panel" class="master-panel">
+				<div class="mst-container">
+					<label for="check-lst-typ" class="mst-item">Checklist Doc Type</label>
+					<input type="text" name="check-lst-typ" value="7" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="check-lst-typ" />
+
+					<label  class="mst-item" for="fiscal-yr">Fiscal Year</label>
+					<input type="text" name="fiscal-yr" value="2022" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="fiscal-yr" />
+				</div>
+
+			<div class="mst-container">
+					<label  class="mst-item" for="c-code">Company code</label>
+					<input type="text" name="c-code" value="3440" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="c-code" />
+				<label  class="mst-item" for="vendor">Vendor</label>
+				<input type="text" name="vendor" value="17979" disabled class="master-input-txt "
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="vendor" />
+			  </div>
+			  <div class="mst-container">
+					<label  class="mst-item" for="sp-gl">Sp. G/L</label>
+					<input type="text" name="sp-gl" value="J" disabled class="master-input-txt "
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="sp-gl" />
+				<label  class="mst-item" for="place-supply">Place of Supply</label>
+				<input type="text" name="place-supply" value="33" disabled class="master-input-txt "
+					data-dojo-type="dijit/form/TextBox"
+					data-dojo-props="trim:true, propercase:true" id="place-supply" />
+				</div>
+
+				<div class="mst-container">
+					<label  class="mst-item" for="business-a">Business Area</label>
+					<input type="text" name="business-a" value="1000" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="business-a" />
+					<label  class="mst-item" for="tax-code">Tax Code</label>
+					<input type="text" name="tax-code" value="V0" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="tax-code" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="business-plc">Business Place</label>
+					<input type="text" name="business-plc" value="1001" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="business-plc" />
+					<label  class="mst-item" for="section-c">Section code</label>
+					<input type="text" name="section-c" value="1000" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="section-c" />
+				</div>
+				<div class="mst-container">
+						<label  class="mst-item" for="profit-cent">Profit Center</label>
+						<input type="text" name="profit-cent" value="1001000000" disabled class="master-input-txt "
+							data-dojo-type="dijit/form/TextBox"
+							data-dojo-props="trim:true, propercase:true" id="profit-cent" />
+					<label  class="mst-item" for="assignment">Assignment</label>
+					<input type="text" name="assignment" value="Land Payment" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="assignment" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="txt">Text</label>
+					<input type="text" name="txt" value="Land Payment" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="txt" />
+					<label  class="mst-item" for="bank-prn-type">Bank Partner type</label>
+					<input type="text" name="bank-prn-type" value="1" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="bank-prn-type" />
+				</div>
+				<div class="mst-container">
+					<label  class="mst-item" for="docu-sub-c">Document Sub Category</label>
+					<input type="text" name="docu-sub-c" value="36" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="docu-sub-c" />
+					<label  class="mst-item" for="remarks">Remarks</label>
+					<input type="text" name="remarks" value="39" disabled class="master-input-txt "
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="remarks" />
+				</div>
+	</div>
+
+	<div class="compensation-container" style="justify-content: unset;">
+		<label for="payment-type" class="compensation-item pay-label">Please Select Payment Type :</label>
+		<div id="payment-type" class="compensation-item"></div>
+	</div>
+			<div id="init-private" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>Required Private Land Compensation</legend>
+				<div class="panel-container">
+					<span class="panel-title">Required Private Land Compensation</span>
+				</div>
+				<div class="compensation-container">
+					<label for="init-pvt-land-com" class="compensation-item">Land Compensation</label>
+					<input type="text" name="init-pvt-land-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true, invalidMessage:'Invalid value'" id="init-pvt-land-com" />
+					<div id="init-pvt-land-wbs" class="compensation-item"></div>
+				</div>
+				<div class="compensation-container">
+					<label for="init-pvt-asset-com" class="compensation-item">Asset Compensation</label>
+					<input type="text" name="init-pvt-asset-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true, invalidMessage:'Invalid value'" id="init-pvt-asset-com" />
+					<div id="init-pvt-asset-wbs" class="compensation-item"></div>
+					</div>
+				<div class="compensation-container">
+					<label for="init-pvt-tree-com" class="compensation-item">Tree Compensation</label>
+					<input type="text" name="init-pvt-tree-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true, invalidMessage:'Invalid value'" id="init-pvt-tree-com" />
+					<div id="init-pvt-tree-wbs" class="compensation-item"></div>
+					</div>
+				<div class="compensation-container">
+					<label for="init-pvt-total-com" class="compensation-item">Total Compensation</label>
+					<input type="text" name="init-pvt-total-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true, invalidMessage:'Invalid value'" id="init-pvt-total-com" disabled />
+				</div>
+				<button data-dojo-type="dijit/form/Button"
+						data-dojo-id="comPvtUpdate"
+						data-dojo-props="iconClass:'dijitIconSave'">
+			Update Required Payment
+		</button>
+			</div>
+
+			<div id="private-com" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>Private Land Compensation</legend>
+				<div class="panel-container">
+					<span class="panel-title">Private Land Compensation</span>
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-land-com" class="compensation-item">Land Compensation</label>
+					<input type="text" name="pvt-land-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-land-com" />
+					<input type="text" disabled name="pvt-land-wbs" value="" class="wbs-input compensation-item"
+						data-dojo-type="dijit/form/TextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-land-wbs" />
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-asset-com" class="compensation-item">Asset Compensation</label>
+					<input type="text" name="pvt-asset-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-asset-com" />
+					<input type="text" disabled name="pvt-asset-wbs" value="" class="wbs-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-asset-wbs" />
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-tree-com" class="compensation-item">Tree Compensation</label>
+					<input type="text" name="pvt-tree-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-tree-com" />
+					<input type="text" disabled name="pvt-tree-wbs" value="" class="wbs-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-tree-wbs" />
+				</div>
+				<div class="compensation-container">
+					<label for="pvt-total-com" class="compensation-item">Total Compensation</label>
+					<input type="text" disabled name="pvt-total-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="pvt-total-com" />
+				</div>
+			</div>
+
+			<div id="private" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>R&R Components</legend>
+				<div class="panel-container">
+					<span class="panel-title">R&R Components</span>
+				</div>
+			  <label for="pay_cost_unit">Payment of onetime cost against housing unit to PDF</label>
+			  <input type="text" name="pay_cost_unit" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="pay_cost_unit" />
+
+			  <label for="pay_cost_plot">Payment of onetime cost against plot to PDF</label>
+			  <input type="text" name="pay_cost_plot" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="pay_cost_plot" />
+
+			  <label for="pay_cost_lieu">Payment of Onetime Cost in lieu of employment to PAFs</label>
+			  <input type="text" name="pay_cost_lieu" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="pay_cost_lieu" />
+
+			  <label for="grant_dis_fam">Subsistence Grant to displaced family</label>
+			  <input type="text" name="grant_dis_fam" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="grant_dis_fam" />
+
+			  <label for="grant_scst_fam">Additional Subsistence Grant for ST/SC to displaced family</label>
+			  <input type="text" name="grant_scst_fam" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="grant_scst_fam" />
+
+			  <label for="tran_cost_fam">Transportation Cost for  displaced family</label>
+			  <input type="text" name="tran_cost_fam" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="tran_cost_fam" />
+
+			  <label for="pay_cattle_sh">Payment towards Cattle shed/petty shops cost</label>
+			  <input type="text" name="pay_cattle_sh" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="pay_cattle_sh" />
+
+			  <label for="grant_art_trader">One time grant to artisan, small traders and certain others </label>
+			  <input type="text" name="grant_art_trader" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="grant_art_trader" />
+
+			  <label for="settle_allow">One-time Resettlement Allowance</label>
+			  <input type="text" name="settle_allow" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="settle_allow" />
+
+			  <label for="fee_stamp_duty">Stamp duty and registration fee, if any</label>
+			  <input type="text" name="fee_stamp_duty" value="" class="input-txt"
+				  data-dojo-type="dijit/form/NumberTextBox"
+				  data-dojo-props="trim:true, propercase:true" id="fee_stamp_duty" />
+			</div>
+
+			<div id="init-forest" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>Required FRA Land Compensation</legend>
+				<div class="panel-container">
+					<span class="panel-title">Required FRA Land Compensation</span>
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="init-fra-land-com">Land Compensation</label>
+					<input name="init-fra-land-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="init-fra-land-com" />
+					<div id="init-forest-land-wbs" class="compensation-item"></div>
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="init-fra-assest-com">Asset Compensation</label>
+					<input name="init-fra-assest-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="init-fra-asset-com" />
+					<div id="init-forest-asset-wbs" class="compensation-item"></div>
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="init-fra-tree-com">Tree Compensation</label>
+					<input name="init-fra-tree-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="init-fra-tree-com" />
+					<div id="init-forest-tree-wbs" class="compensation-item"></div>
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="init-fra-total-com">Total Compensation</label>
+					<input name="init-fra-total-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" disabled id="init-fra-total-com" />
+				</div>
+				<button data-dojo-type="dijit/form/Button"
+				data-dojo-id="comForestUpdate"
+				data-dojo-props="iconClass:'dijitIconSave'">
+					Update Required Payment
+				</button>
+			</div>
+
+			<div id="forest-com" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>FRA Land Compensation</legend>
+				<div class="panel-container">
+					<span class="panel-title">FRA Land Compensation</span>
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-land-com">Land Compensation</label>
+					<input type="text" name="fra-land-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-land-com" />
+					<input type="text" disabled name="forest-land-wbs" value="" class="wbs-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="forest-land-wbs" />
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-assest-com">Asset Compensation</label>
+					<input type="text" name="fra-assest-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-assest-com" />
+					<input type="text" disabled name="forest-asset-wbs" value="" class="wbs-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="forest-asset-wbs" />
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-tree-com">Tree Compensation</label>
+					<input type="text" name="fra-tree-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-tree-com" />
+					<input type="text" disabled name="forest-tree-wbs" value="" class="wbs-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="forest-tree-wbs" />
+				</div>
+				<div class="compensation-container">
+					<label class="compensation-item" for="fra-total-com">Total Compensation</label>
+					<input type="text" disabled name="fra-total-com" value="" class="compensation-input compensation-item"
+						data-dojo-type="dijit/form/NumberTextBox"
+						data-dojo-props="trim:true, propercase:true" id="fra-total-com" />
+				</div>
+			</div>
+
+			<div id="forest" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>Forest Land Components</legend>
+				<div class="panel-container">
+					<span class="panel-title">Forest Land Components</span>
+				</div>
+				<label for="pay_npv">Payment of NPV</label>
+				<input type="text" name="pay_npv" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_npv" />
+
+				<label for="pay_safety_zn">Safety Zone Payment</label>
+				<input type="text" name="pay_safety_zn" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_safety_zn" />
+
+				<label for="amt_wlmp">Deposition of amount towards Wild Life Management Plan(WLMP)</label>
+				<input type="text" name="amt_wlmp" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="amt_wlmp" />
+
+				<label for="amt_ca_scheme">Deposition of amount for Compensatory Afforestation(CA) Scheme</label>
+				<input type="text" name="amt_ca_scheme" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="amt_ca_scheme" />
+
+				<label for="pay_gap_smc">Payment towards Gap Plantation &  SMC</label>
+				<input type="text" name="pay_gap_smc" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_gap_smc" />
+
+				<label for="pay_tree_fel">Payment towards Tree Felling</label>
+				<input type="text" name="pay_tree_fel" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_tree_fel" />
+			  </div>
+
+			  <div id="govt" class="panel-land-type" data-dojo-type="dijit/Fieldset">
+				<legend>Govt. Land Components</legend>
+				<div class="panel-container">
+					<span class="panel-title">Govt. Land Components</span>
+				</div>
+				<label for="pay_premium">Payment of Onetime Premium</label>
+				<input type="text" name="pay_premium" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_premium" />
+
+				<label for="pay_lease_rent_an">Payment of Annual Lease Rent </label>
+				<input type="text" name="pay_lease_rent_an" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_lease_rent_an" />
+
+				<label for="pay_assets">Payment of Assets over Govt. Land </label>
+				<input type="text" name="pay_assets" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_assets" />
+
+					<div class="panel-container">
+						<span class="panel-title">Encroachment Land Components</span>
+					</div>
+				<label for="pay_ench_gov_lnd">Payment towards Encroachment over Govt. Land </label>
+				<input type="text" name="pay_ench_gov_lnd" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_ench_gov_lnd" />
+
+				<label for="pay_ench_forest_lnd">Payment towards Encroachment over Forest Land </label>
+				<input type="text" name="pay_ench_forest_lnd" value="" class="input-txt"
+					data-dojo-type="dijit/form/NumberTextBox"
+					data-dojo-props="trim:true, propercase:true" id="pay_ench_forest_lnd" />
+			  </div>
+
+		<button data-dojo-type="dijit/form/Button"
+				id="updateButton"
+				data-dojo-id="frUpdateButton"
+				data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconInsertTable'"
+				type="button">
+			Reuest For Payment
+		</button>
+	</div>
+	</div>

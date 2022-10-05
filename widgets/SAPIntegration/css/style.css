@@ -1,0 +1,127 @@
+.jimu-widget-sap .input-txt {
+  margin-top: 2px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.jimu-widget-sap .panel-land-type {
+  margin: 25px 0;
+  display: none;
+  width: 100%;
+  font-weight: bolder;
+  color: #085e5e;
+  box-shadow: 6px 7px 7px -1px #eee;
+}
+
+.jimu-widget-sap .panel-container {
+  position: relative;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container-main {
+  display: none;
+}
+
+.jimu-widget-sap .panel-title {
+  background: aquamarine;
+  padding: 7px 5%;
+  font-size: 15px;
+  font-weight: bolder;
+  word-spacing: 2px;
+  color: darkcyan;
+  text-transform: uppercase;
+  box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%);
+}
+
+/* .master-input-txt {
+  margin-top: 2px;
+  width: 50%;
+  margin-bottom: 15px;
+  margin-left: 10px;
+} */
+
+
+.jimu-widget-sap .master-input-txt {
+  width: 30%;
+  height: 25px;
+  padding: 0px;
+  color: #eee;
+  font-weight: bolder;
+  font-size: 8px !important;
+  background: #33333336;
+}
+
+.jimu-widget-sap .mst-container {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.jimu-widget-sap .mst-item {
+  flex-grow: 1;
+}
+
+.jimu-widget-sap .mst-item+.mst-item {
+  margin-left: 1%;
+}
+
+.jimu-widget-sap label.mst-item {
+  width: 20%;
+  font-size: 11px;
+}
+
+.jimu-widget-sap .master-panel {
+  background: #aeced3b5;
+  padding: 7px 3%;
+  margin: 30px -9px;
+  font-weight: bolder;
+  color: #085e5e;
+  border-radius: 3%;
+  box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%);
+}
+
+.pay-label {
+  margin-right: 10px;
+  padding-top: 8px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: chocolate;
+}
+
+.jimu-widget-sap .compensation-input {
+  width: 40%;
+  /* height: 25px; */
+  padding: 0;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.jimu-widget-sap .wbs-input {
+  width: 25%;
+  /* height: 25px; */
+  padding: 0;
+  font-weight: bolder;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.compensation-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.compensation-item {
+  /* flex-grow: 1; */
+  /* width: 300px;
+  margin: 5px; */
+  /* text-align: center; */
+}
+
+
+
+div#widgets_SAPIntegration_Widget_20_panel {
+  width: 430px !important;
+}
