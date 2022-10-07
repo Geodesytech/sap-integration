@@ -71,6 +71,24 @@ define([
     updateFeature: null,
     parcelLayer: null,
     confirmPopup: null,
+    masterFields: [
+      "check_list",
+      "fiscal_year",
+      "company_code",
+      "vendor",
+      "sp_g_l",
+      "place_supply",
+      "business_area",
+      "tax_code",
+      "business_place",
+      "section_code",
+      "profit_center",
+      "assignment",
+      "text_note",
+      "bank_partner",
+      "doc_category",
+      "remarks",
+    ],
     privateFields: [
       "pay_cost_unit",
       "pay_cost_plot",
@@ -147,6 +165,7 @@ define([
             evt.graphic.attributes.land_b,
             evt.graphic.attributes.tree_com
           );
+          this._setSAPUI(evt.graphic.attributes);
           if (this.highlightGraphic) this.map.graphics.clear();
           this.highlightGraphic = new Graphic(
             evt.graphic.geometry,
@@ -162,13 +181,13 @@ define([
         })
       );
     },
-    lstTpe: function () {
-      var t = {
+    _landType: function () {
+      var landTypeList = {
         GOVT: this.govFields,
         FOREST: this.forestFields,
         PRIVATE: this.privateFields,
       };
-      return t[this.landType];
+      return landTypeList[this.landType];
     },
     _displayComponents: function (componentId, tree_com) {
       // dom.byId("master-panel").style.display = "inline-block";
@@ -176,6 +195,7 @@ define([
       //   display: "inline-block",
       // });
       // dom.byId("payment-type").style.display = "inline-block";
+      dom.byId("land-type-h").innerHTML = componentId;
       dom.byId("init-pay-container").style.display = "none";
       dom.byId("pay-container").style.display = "inline-block";
       document.getElementById("init-forest").style.display = "none";
@@ -289,9 +309,13 @@ define([
         "init-pvt-land-wbs",
         "init-pvt-asset-wbs",
         "init-pvt-tree-wbs",
+        "init-pvt-interest-wbs",
+        "init-pvt-rnr-wbs",
         "init-forest-land-wbs",
         "init-forest-asset-wbs",
         "init-forest-tree-wbs",
+        "init-forest-interest-wbs",
+        "init-forest-rnr-wbs",
       ];
       for (let index = 0; index < wbsIdLst.length; index++) {
         const element = wbsIdLst[index];
@@ -395,8 +419,8 @@ define([
       this.confirmPopup.on(
         "execute",
         lang.hitch(this, function () {
-          console.log(this.lstTpe());
-          var featureAttributes = this.lstTpe().map((gov, i) => ({
+          console.log(this._landType());
+          var featureAttributes = this._landType().map((gov, i) => ({
             [gov]: dom.byId(gov).value,
           }));
           console.log(featureAttributes);
@@ -429,6 +453,12 @@ define([
       //   );
       //   toggled = !toggled;
       // });
+    },
+    _setSAPUI: function (attributesList) {
+      for (let index = 0; index < this.masterFields.length; index++) {
+        var master = this.masterFields[index];
+        dom.byId(master).value = attributesList[master];
+      }
     },
     _createFilterNodes: function (filters) {
       array.forEach(

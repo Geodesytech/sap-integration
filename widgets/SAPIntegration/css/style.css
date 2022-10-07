@@ -121,6 +121,16 @@
 }
 
 
+.jimu-widget-sap .payment-status {
+  text-align: start;
+  background: #ffeb3beb;
+  padding: 7px 5%;
+  font-size: 15px;
+  font-weight: bolder;
+  word-spacing: 2px;
+  color: chocolate;
+  box-shadow: 6px 7px 7px -1px rgb(0 0 0 / 40%);
+}
 
 div#widgets_SAPIntegration_Widget_20_panel {
   width: 430px !important;
